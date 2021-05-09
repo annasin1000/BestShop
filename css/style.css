@@ -2,14 +2,18 @@
     --main-color:#08A6E4;
     --secondary-color: #ffffff;
     --main-font-color: #000000;
-    --secondary-font-color: #A5A5A5;
     --primary-shadow-color: rgba(7, 172, 230, .16);
+    --color-redish: #FB3B64;
+    --color-green: #55DFB4;
+    --color-black: #000000;
+    --color-grey: #A5A5A5;
+    --color-light-grey: #F7F7F7;
 
-    /*--third-font-color: #000;*/
-    /*--main-border-color: #ff00004d;*/
-    /*--secondary-border-color:#ffffff29;*/
-    /*--main-bg-color: #28272c;*/
-    /*--secondary-bg-color:#fff;*/
+/*Fonty - em, rem, */
+/*px- marginesy, paddingi, cienie, bordery itp.*/
+/*vw,vh- szerokosc, wysokosc np. 100%*/
+/*Elementy klikalne powinny mieć hover a także cursor: pointer.*/
+
 }
 * {
     box-sizing: border-box;
@@ -20,6 +24,11 @@ body {
 }
 a {
     text-decoration: none;
+}
+.content__title {
+    font-family: "Raleway",sans-serif;
+    font-size: 35px;
+    text-align: center;
 }
 .container {
     margin: 0 auto;
@@ -86,7 +95,32 @@ align-items: center}
 /*    color: var(--secondary-color);*/
 /*}*/
 .section2__background {}
+.section2__content {
+    display: flex;
+    justify-content: space-around;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+}
+.circle__1 {
+    background-color: #FB3B64;
+}
+.circle__2 {
+    background-color: var(--main-color);
+}
+.circle__3 {
+    background-color: #55DFB4;
+}
 
+.circle__image {
+    margin-left: 25px;
+    width: 40px;
+    height: 40px;
+}
 footer {
     background-color: #F7F7F7;
     height: 4em;
